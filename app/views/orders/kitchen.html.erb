@@ -1,0 +1,7 @@
+<h1>Меню для кухни</h1>
+
+<%= content_tag :ul do %>
+  <% @menu.each do |dish| %>
+    <%= content_tag :li, "#{dish[:name]} - #{dish[:count]}" %>
+  <% end %>
+<% end %>
