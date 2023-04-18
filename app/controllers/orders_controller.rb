@@ -23,4 +23,10 @@ class OrdersController < ApplicationController
   def kitchen
     @menu = Order.generate_kitchen_menu
   end
+
+  def kitchen_json
+    menu = Order.generate_kitchen_menu
+    render json: menu
+  end
+
 end
