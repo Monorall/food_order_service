@@ -1,24 +1,43 @@
-# README
+# Prerequisites
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Before you begin, you will need to have the following tools installed on your computer:
 
-Things you may want to cover:
+   * Ruby 3.1.3 or later
+   * Rails 7.0.4 or later
+   * Git
+   
+   # Installation
+ 
+ Follow these steps to install the application on your local machine:
+ 
+ Clone the repository:
+ 
+     git clone https://github.com/Monorall/food_order_service.git
+     
+Navigate to the application directory:
+ 
+     cd food_order_service
+     
+Install the required gems:
+     
+     bundle install
+     
+install the database with the command:
 
-* Ruby version
+     rails db:create
 
-* System dependencies
+Run the migration:
 
-* Configuration
+     rails db:migrate
+     
+Load the data from the dishes.yml and ingredients.yml files with the command:
+   
+     rails db:seed
+    
+# Used
 
-* Database creation
+Аfter doing all the manipulations, you can use the application at the link http://127.0.0.1:3000. Select the ingredients that you do not like and the order of dishes that do not contain these ingredients will go to the kitchen. To see what came to the kitchen, follow the link http://127.0.0.1:3000/orders/kitchen_json there will be a json with the number of dishes to cook.
 
-* Database initialization
+You can also add your dishes and ingredients to the database, after entering, run the command:
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+    rails db:reset
