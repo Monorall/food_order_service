@@ -1,6 +1,12 @@
 Rails.application.routes.draw do
-  # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
+  root 'orders#new'
+  resources :orders, only: [:create]
+  get 'kitchen', to: 'orders#kitchen'
 
-  # Defines the root path route ("/")
-  # root "articles#index"
+  resources :orders do
+    collection do
+      get :kitchen
+      get :kitchen_json
+    end
+  end
 end

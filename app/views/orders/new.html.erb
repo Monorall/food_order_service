@@ -1,0 +1,14 @@
+<h1>Создать заказ</h1>
+
+<%= form_with(model: @order, local: true) do |form| %>
+  <%= form.submit 'Создать заказ' %>
+  <p>Выберите ингредиенты, на которые у вас аллергия:</p>
+  <% @ingredients.each do |ingredient| %>
+    <div>
+      <%= check_box_tag "excluded_ingredients[]", ingredient.id %>
+      <%= label_tag "excluded_ingredients_#{ingredient.id}", ingredient.name %>
+    </div>
+  <% end %>
+
+
+<% end %>
