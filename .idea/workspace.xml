@@ -6,11 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="7d40d557-f0a4-4302-9adf-cb75fcdb034a" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/orders_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/orders_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/orders/new.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/orders/new.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/routes.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/routes.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/dishes.yml" beforeDir="false" afterPath="$PROJECT_DIR$/db/dishes.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/ingredients.yml" beforeDir="false" afterPath="$PROJECT_DIR$/db/ingredients.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/models/order.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/order.rb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -286,7 +282,9 @@
       <workItem from="1681730181651" duration="885000" />
       <workItem from="1681731073954" duration="4296000" />
       <workItem from="1681821898810" duration="119000" />
-      <workItem from="1681825513009" duration="625000" />
+      <workItem from="1681825513009" duration="2895000" />
+      <workItem from="1681926698680" duration="50000" />
+      <workItem from="1681994010434" duration="1094000" />
     </task>
     <task id="LOCAL-00001" summary="Add models">
       <created>1681730969144</created>
@@ -309,7 +307,14 @@
       <option name="project" value="LOCAL" />
       <updated>1681732670273</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Add json return for the kitchen">
+      <created>1681826198068</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1681826198068</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -319,6 +324,7 @@
     <MESSAGE value="Add models" />
     <MESSAGE value="commit" />
     <MESSAGE value="Add orders controller and add views" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add orders controller and add views" />
+    <MESSAGE value="Add json return for the kitchen" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add json return for the kitchen" />
   </component>
 </project>
